@@ -1,0 +1,38 @@
+<template id="navigation">
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Decathlon</a>
+
+            <div type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navmenu">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </div>
+        </div>
+        <div class="navbar-collapse collapse navmenu">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a>Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a>Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</template>
+
+<script type="text/javascript">
+    var XNavigation = document.registerElement('x-navigation', {
+        prototype: Object.create(HTMLElement.prototype,{
+            createdCallback: {
+                value: function(){
+                    var root = this.createShadowRoot();
+                    var template = document.querySelector('#navigation');
+                    var clone = document.importNode(template.content, true);
+                    root.appendChild(clone);
+                }
+            }
+        })
+    });
+</script>
