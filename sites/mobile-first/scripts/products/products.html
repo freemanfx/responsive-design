@@ -1,3 +1,22 @@
-<div class="jumbotron">
-    Products page
+<div ng-controller="ProductsController">
+    <div ng-repeat="product in products" class="product">
+        <div class="row">
+            <div class="col-xs-12">
+                <p>{{product.name}}</p>
+            </div>
+
+            <div class="col-xs-12">
+                {{product.description}}
+                <p class="border-bottom"></p>
+            </div>
+
+            <div class="col-xs-6">
+                Buy
+            </div>
+            <div class="col-xs-6">
+                {{product.price}}
+            </div>
+        </div>
+
+    </div>
 </div>

@@ -5,3 +5,14 @@ body {
 .main-view {
   margin-top: 80px;
 }
+
+.product {
+  background-color: #349bca;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.border-bottom {
+  border-bottom: 1px solid black;
+}
