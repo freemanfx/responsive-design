@@ -2,3 +2,4 @@
 .idea
 *.iml
 .sass-cache
+sites/mobile-first/bower_components
