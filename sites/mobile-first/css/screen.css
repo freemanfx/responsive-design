@@ -2,3 +2,7 @@
 body {
   background-color: #cccccc;
 }
+
+.main-view {
+    margin-top: 80px;
+}
